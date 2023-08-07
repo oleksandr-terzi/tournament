@@ -1,0 +1,414 @@
+@font-face {
+    font-family: Dash Horizon;
+    src: url("../fonts/dash-horizon.otf") format("opentype");
+    }
+
+body {
+    font-family: Dash Horizon;
+    margin: 0;
+    background-image: linear-gradient( 0.3deg,  rgba(6,17,33,1) 1.1%, rgb(30, 68, 156) 97.3% );
+    min-width: 960px;
+    background-attachment: fixed;
+}
+
+h1 {
+    color: #d2e229;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+    font-size: 50px;
+}
+
+h2 {
+    color: #6de229;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+    font-size: 32px;
+}
+
+button {
+    font-family: Dash Horison;
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(199, 170, 73);
+}
+
+input {
+    border:1px solid #9E9E9E;
+    color: #000000;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 2px;
+    font-size: 24px;
+    font-family: Dash Horizon;
+    background: rgb(255, 255, 255);
+    width: 100px;
+    border-radius: 20px;
+    padding-left: 10px;
+}
+
+input:hover {
+    background: rgb(206, 206, 206);
+}
+
+.table_blur {
+    background: #f5ffff;
+    border-collapse: collapse;
+    text-align: left;
+    width: 600px;
+  }
+  .table_blur th {
+    border-top: 1px solid #777777;	
+    border-bottom: 1px solid #777777; 
+    box-shadow: inset 0 1px 0 #999999, inset 0 -1px 0 #999999;
+    background: linear-gradient(#9595b6, #5a567f);
+    color: white;
+    padding: 10px 15px;
+    position: relative;
+  }
+  .table_blur th:after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 25%;
+    height: 25%;
+    width: 100%;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255,255,255,.08));
+  }
+  .table_blur tr:nth-child(odd) {
+    background: #ebf3f9;
+  }
+  .table_blur th:first-child {
+    border-left: 1px solid #777777;	
+    border-bottom:  1px solid #777777;
+    box-shadow: inset 1px 1px 0 #999999, inset 0 -1px 0 #999999;
+  }
+  .table_blur th:last-child {
+    border-right: 1px solid #777777;
+    border-bottom:  1px solid #777777;
+    box-shadow: inset -1px 1px 0 #999999, inset 0 -1px 0 #999999;
+  }
+  .table_blur td {
+    border: 1px solid #e3eef7;
+    padding: 10px 15px;
+    position: relative;
+    transition: all 0.5s ease;
+  }
+  .table_blur tbody:hover td {
+    color: transparent;
+    text-shadow: 0 0 3px #a09f9d;
+  }
+  .table_blur tbody:hover tr:hover td {
+    color: #444444;
+    text-shadow: none;
+  }
+
+.slider__wrapper {
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.slider__wrapper .cars__logo {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider__wrapper .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider__wrapper .buttons .arrows {
+    text-align: center;
+}
+
+.slider__wrapper .buttons .start {
+    text-align: center;
+}
+
+.slider__wrapper .buttons .arrows button {
+    margin: 20px 50px 0;
+    width: 100px;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+    
+}
+
+.slider__wrapper .buttons .start button {
+    margin: 20px 0 0;
+    width: 300px;
+    height: 220px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+    
+}
+
+.slider__wrapper .buttons .start button:active {
+    background-color: rgba(86, 145, 212, 0.5);
+}
+
+.slider__wrapper .buttons .arrows button:active {
+    background-color: rgba(255, 255, 255,.5);
+}
+
+.slider__wrapper .buttons .arrows .prev {
+    background: url(../images/prev1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider__wrapper .buttons .arrows .next {
+    background: url(../images/next1.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider__wrapper .buttons .start .startBtn {
+    background: url(../images/checkBtn.png) center center no-repeat;
+    background-size: cover;
+}
+
+.slider__wrapper .cars__logo .current {
+    opacity: 1;
+}
+
+.slider__wrapper .cars__logo img {
+    position: absolute;
+    opacity: 0;
+    transition: all .6s;
+    width: 250px;
+    height: 120px;
+}
+
+.cars__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    color: #6de229;
+    text-align: center;
+    text-shadow: -1px -1px 0 #000;
+    font-size: 32px;
+}
+
+.btns__cars__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cars__wrapper .back__button {
+    background: url(../images/exitBtn.png) center center no-repeat;
+    background-size: cover;
+}
+.cars__wrapper .start__race__btn {
+    background: url(../images/startBtn.png) center center no-repeat;
+    background-size: cover;
+    transform: scale(0.70);
+}
+
+.cars__wrapper button {
+    width: 250px;
+    height: 200px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    transition: all .3s;
+}
+.cars__wrapper .back__button:active {
+    background-color: rgba(86, 145, 212, 0.5);
+}
+.cars__wrapper .start__race__btn:active {
+    background-color: rgba(86, 145, 212, 0.5);
+}
+
+.start__page__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.start__page__title {
+    margin-bottom: 40px;
+}
+
+.start__page__img__wrapper {
+    width: 600px;
+    height: 400px;
+    border-radius: 20px;
+}
+.start__page__img__wrapper img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.start__page__wrapper button {
+    margin-top: 40px;
+    width: 150px;
+    height: 120px;
+    background-color: rgb(72, 113, 190);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+
+.start__page__wrapper button:hover {
+    background: rgba(252, 210, 210, 0);
+	color: #000000;
+	box-shadow: inset 0 0 0 3px #309bd1;
+}
+.start__page__wrapper button:active {
+    background: rgba(0, 197, 247, 0.5);
+}
+
+.select__page__wrapper {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.select__page__wrapper h1 {
+    margin-bottom: 50px;
+
+}
+
+.select__page__settings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.racers__number__container label {
+    display: flex;
+    flex-direction: column;
+    font-size: 28px;
+    color: #00ff74;
+}
+
+.racers__number__container {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.select__page__wrapper .generate__btn {
+    margin-top: 0;
+    margin-right: 40px;
+}
+
+.user__name {
+    width: 150px;
+}
+
+.racers__list {
+    color: #00ff74;
+    font-size: 30px;
+}
+
+.cars_animation {
+    display: none;
+}
+
+#container {
+    position: relative;
+    width: 1600px;
+    height: 500px;
+  }
+  
+  .image {
+    position: absolute;
+    width: 720px;
+    height: 450px;
+    background-size: cover;
+  }
+  
+  .cars_animation{
+    text-align: center;
+  }
+  
+  .start_anim{
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: rgb(55, 12, 80);
+    color:rgb(240, 240, 116);
+  }
+  
+  .start_anim:hover{
+  width: 20%;
+  color: rgb(54, 131, 175);
+  }
+  
+  .seeTable{
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: rgb(55, 12, 80);
+    color:rgb(240, 240, 116);
+  }
+  
+  .seeTable:hover{
+  width: 20%;
+  color: rgb(54, 131, 175);
+}
+
+.results__table {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40px;
+    flex-direction: column;
+}
+
+.results__table button {
+    margin-top: 40px;
+    width: 150px;
+    height: 120px;
+    background-color: rgb(72, 113, 190);
+    border-radius: 20px;
+    transition: all .3s;
+}
+
+
+.results__table button:hover {
+    background: rgba(252, 210, 210, 0);
+	color: #000000;
+	box-shadow: inset 0 0 0 3px #309bd1;
+}
+.results__table button:active {
+    background: rgba(0, 197, 247, 0.5);
+}
